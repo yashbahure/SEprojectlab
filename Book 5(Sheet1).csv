@@ -1,0 +1,16 @@
+﻿TC No,Input Condition,Expected Output,Actual Output,Result
+TC_01,"Valid Inputs, Application Count = 1",Success,Success,Pass
+TC_02,"Valid Inputs, Application Count = 4",Success,Success,Pass
+TC_03,"Valid Inputs, Application Count = 5 (Boundary)",Success,Success,Pass
+TC_04,"Invalid Limit, Application Count = 6",Error: Limit reached,Error: Max 5 applications,Pass
+TC_05,"Boundary Case, Application Count = 0",Success,Success,Pass
+TC_06,Missing Student ID,Error: Field mandatory,Error: Mandatory fields,Pass
+TC_07,Missing Internship ID,Error: Field mandatory,Error: Mandatory fields,Pass
+TC_08,Missing Resume,Error: Field mandatory,Error: Mandatory fields,Pass
+TC_09,Missing Cover Letter,Error: Field mandatory,Error: Mandatory fields,Pass
+TC_10,Valid Date Range (Start < End),Success,Success,Pass
+TC_11,Boundary Date Range (Start = End),Success,Success,Pass
+TC_12,Invalid Date Range (Start > End),Error: Invalid date,Error: Start > End date,Pass
+TC_13,Invalid Date Format (Null/Text),Error: Format invalid,Error: Invalid date format,Pass
+TC_14,Duplicate Application,Error: Duplicate,Error: Duplicate not allowed,Pass
+TC_15,Extra Valid Case,Success,Success,Pass
