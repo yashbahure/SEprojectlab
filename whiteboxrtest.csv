@@ -1,0 +1,16 @@
+﻿TC No,Target Path,Input Condition,Expected Output,Actual Output,Result
+WB_01,Path 1,Null Student Object,Error: Fields mandatory,Error: Mandatory fields,Pass
+WB_02,Path 1,Empty Student ID,Error: Fields mandatory,Error: Mandatory fields,Pass
+WB_03,Path 1,Null Internship Object,Error: Fields mandatory,Error: Mandatory fields,Pass
+WB_04,Path 1,Empty Internship ID,Error: Fields mandatory,Error: Mandatory fields,Pass
+WB_05,Path 1,Empty Resume,Error: Fields mandatory,Error: Mandatory fields,Pass
+WB_06,Path 1,Null Cover Letter,Error: Fields mandatory,Error: Mandatory fields,Pass
+WB_07,Path 2,Application Count = 5,Error: Limit reached,Error: Max 5 applications,Pass
+WB_08,Path 2,Application Count = 6,Error: Limit reached,Error: Max 5 applications,Pass
+WB_09,Path 3,Start Date > End Date,Error: Invalid date,Error: Start > End date,Pass
+WB_10,Path 3,Start Date is Null,Error: Invalid date,Error: Invalid date format,Pass
+WB_11,Path 3,End Date is Null,Error: Invalid date,Error: Invalid date format,Pass
+WB_12,Path 4,Exact Duplicate Application,Error: Duplicate not allowed,Error: Duplicate,Pass
+WB_13,Path 4,Duplicate with new Resume,Error: Duplicate not allowed,Error: Duplicate,Pass
+WB_14,Path 5,Standard Valid Application,Success,Success,Pass
+WB_15,Path 5,Valid Application (Count = 4),Success,Success,Pass
